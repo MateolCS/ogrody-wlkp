@@ -1,20 +1,16 @@
-import {ThemeProvider} from 'styled-components';
-import GlobaStyles from './components/styles/Global';
-import Header from './components/Header';
-const theme = {
-  breakpoints: {
-    mobile: '768px'
-  }
-}
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobaStyles/>
-      <>
-        <Header/>
-      </>
-    </ThemeProvider>
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+        </Routes>
+      </Router>
+    </>
   );
 }
 
