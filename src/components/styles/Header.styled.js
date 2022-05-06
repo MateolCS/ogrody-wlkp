@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
     color: #fff;
     padding: .7rem 0;
     font-size: .7rem;
+    font-weight: 400;
 `
 
 export const HeaderContainer = styled.div`
@@ -48,6 +49,7 @@ export const HeaderContent = styled.div`
 export const HeaderA = styled.a`
     color: #fff;
     font-size: 2rem;
+    padding-right: .5rem;
 
     &:hover {
         color: #2c6e49;
