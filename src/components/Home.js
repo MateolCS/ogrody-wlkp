@@ -7,7 +7,7 @@ import { StyledA } from './styles/A.styled'
 import {FaEnvelope, FaFacebook, FaYoutube, FaPhone, FaHome} from 'react-icons/fa'
 import logo from '././../assets/logo.png'
 import { StyledLink, ContactLink, GreenLi } from './styles/List.styled'
-
+import OurClients from './OurClients'
 const Home = () => {
   return (
     <>
@@ -22,6 +22,7 @@ const Home = () => {
       <Stripe bgColor={'#6a994e'} justify={'center'}>
         <p>Ogrody Poznanń, Piła, Budzyn, Wielkopolska. Z myślą ogodzie i potrzebie przebywania w pieknym otoczeniu</p>
       </Stripe>
+      <OurClients/>
       <InfoNav>
         <List>
           <img src={logo} alt="ogrody-wlkp-logo" />
