@@ -18,6 +18,7 @@ export const FooterContainer = styled.div`
         width: 100%;
         text-align: center;
         gap: .7rem;
+        margin-bottom: 10.4rem;
     }
 `
 

@@ -12,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
     body{
         font-family: 'Open Sans', sans-serif;
     }
-
 `
 
 export default GlobalStyles

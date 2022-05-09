@@ -10,4 +10,9 @@ export const StyledInfoNavContainer = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        grid-template-columns: 1fr;
+    }
 `
