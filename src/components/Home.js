@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Stripe from './Stripe'
 import InfoNav from './InfoNav'
 import { StyledA } from './styles/A.styled'
-
+import CompanyStatus from './CompanyStatus'
 
 import OurClients from './OurClients'
 const Home = () => {
@@ -17,6 +17,7 @@ const Home = () => {
           <StyledA href="tel:604-342-038" txtColor={'#fff'} bgColor={'#6a994e'}>Zadzwoń do Nas</StyledA>
         </div>
       </Stripe>
+      <CompanyStatus/>
       <Stripe bgColor={'#6a994e'} justify={'center'}>
         <p>Ogrody Poznanń, Piła, Budzyn, Wielkopolska. Z myślą ogodzie i potrzebie przebywania w pieknym otoczeniu</p>
       </Stripe>
