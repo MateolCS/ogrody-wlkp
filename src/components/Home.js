@@ -7,10 +7,12 @@ import CompanyStatus from './CompanyStatus'
 import RealizationsPreview from './RealizationsPreview'
 import OurClients from './OurClients'
 import ServicesPreview from './ServicesPreview'
+import Ad from './Ad'
 const Home = () => {
   return (
     <>
       <Header/>
+      <Ad/>
       <Stripe bgColor={'#184e77'} justify={'space-between'}>
         <p>Szukasz inspiracji? Chcesz dowiedzieć sie więcej? Napisz lub zadzwoń</p>
         <div>
