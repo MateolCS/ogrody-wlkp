@@ -6,6 +6,7 @@ import { StyledA } from './styles/A.styled'
 import CompanyStatus from './CompanyStatus'
 import RealizationsPreview from './RealizationsPreview'
 import OurClients from './OurClients'
+import ServicesPreview from './ServicesPreview'
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
           <StyledA href="tel:604-342-038" txtColor={'#fff'} bgColor={'#6a994e'}>Zadzwoń do Nas</StyledA>
         </div>
       </Stripe>
+      <ServicesPreview/>
       <RealizationsPreview/>
       <CompanyStatus/>
       <Stripe bgColor={'#6a994e'} justify={'center'}>
