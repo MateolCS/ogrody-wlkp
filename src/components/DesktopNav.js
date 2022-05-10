@@ -16,7 +16,7 @@ const DesktopNav = () => {
   return (
     <DesktopNavStyled>
       <PrimaryList show={toggleMenu}>
-          <li><NavLink to={'/home'}>Home</NavLink></li>
+          <li><NavLink to={'/'}>Home</NavLink></li>
           <li><NavLink to={'/aboutus'}>O Firmie</NavLink></li>
           <PrimaryListItemHover onClick={toggleSecondList}><NavLink to={'/services'}>Oferta</NavLink> <TriangleDown/>
             <SecondaryList hoverSecondList={hoverSecondList} >
