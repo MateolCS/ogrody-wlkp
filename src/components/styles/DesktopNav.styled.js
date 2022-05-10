@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {FaCaretDown} from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 export const DesktopNavStyled = styled.nav`
     color: #fff;
     width: 40%;
@@ -22,7 +22,7 @@ export const PrimaryList = styled.ul`
     >li{
         &:hover{
             cursor: pointer;
-            color: #000814;
+            color: #a7c957;
         }
     }
 
@@ -51,27 +51,22 @@ export const SecondaryList = styled.ul`
     justify-content: center;
     gap: 1rem;
     position: absolute;
-    bottom: -26.7rem;
+    bottom: -32.3rem;
     left: 3rem;
     background-color: #6a994e;
     z-index: 1;
 
     li{
-        padding: 0.5rem;
+        padding: 0.2rem;
         width: 10rem;
         text-align: center;
         border-bottom: 1px solid #fff;
         color: #fff;
-
-        &:hover{
-            cursor: pointer;
-            color: #000814;
-        }
     }
 
 
 
-    li:nth-of-type(7){
+    li:nth-of-type(9){
         border-bottom: none;
     }
 
@@ -108,6 +103,24 @@ export const TriangleDown = styled(FaCaretDown)`
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         top: 30px;
         display: none;
+    }
+`
+
+export const NavLink = styled(Link)`
+    text-decoration: none;
+    color: #fff;
+    font-size: ${({smaller}) => smaller ? '.9rem' : '1.2rem'};
+    
+    &:hover{
+        cursor: pointer;
+        color: #a7c957;
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        &:hover{
+            cursor: pointer;
+            color: #000814;
+        }
     }
 `
 

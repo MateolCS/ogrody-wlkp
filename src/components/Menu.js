@@ -17,17 +17,17 @@ const Menu = () => {
     const backgroundVariants = [
         {
             background: bg1,
-            title: "Projektowanie ogrodow",
+            title: "Projektowanie ogrodów",
             path: "/projects"
         },
         {
             background: bg2,
-            title: "Zakładanie ogrodow",
+            title: "Zakładanie ogrodów",
             path: "/get-started"
         },
         {
             background: bg3,
-            title: "Pielęgnacja ogrodow",
+            title: "Pielęgnacja ogrodów",
             path: "/gardens"
         }
     ]

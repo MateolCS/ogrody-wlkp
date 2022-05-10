@@ -1,4 +1,4 @@
-import { DesktopNavStyled, PrimaryList, SecondaryList, PrimaryListItemHover, TriangleDown} from './styles/DesktopNav.styled'
+import { DesktopNavStyled, PrimaryList, SecondaryList, PrimaryListItemHover, TriangleDown, NavLink} from './styles/DesktopNav.styled'
 import { useState, useContext } from 'react'
 import { MenuContext } from './Menu'
 
@@ -16,22 +16,24 @@ const DesktopNav = () => {
   return (
     <DesktopNavStyled>
       <PrimaryList show={toggleMenu}>
-          <li>Home</li>
-          <li>O Firmie</li>
-          <PrimaryListItemHover onClick={toggleSecondList}>Oferta <TriangleDown/>
+          <li><NavLink to={'/home'}>Home</NavLink></li>
+          <li><NavLink to={'/aboutus'}>O Firmie</NavLink></li>
+          <PrimaryListItemHover onClick={toggleSecondList}><NavLink to={'/services'}>Oferta</NavLink> <TriangleDown/>
             <SecondaryList hoverSecondList={hoverSecondList} >
-                <li>Produkty</li>
-                <li>Produkty</li>
-                <li>Produkty</li>
-                <li>Produkty</li>
-                <li>Produkty</li>
-                <li>Produkty</li>
-                <li>Produkty</li>
+                <li><NavLink smaller to={'/projects'}>Projektowanie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/get-started'}>Zakladanie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/gardens'}>Pielęgnacja ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/hydration'}>Nawadnianie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/lights'}>Oświetlenie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/dihydration'}>Odwodnienia i drenaze</NavLink></li>
+                <li><NavLink smaller to={'/brick'}>Nawiezchnie utwardzone</NavLink></li>
+                <li><NavLink smaller to={'/multi-tool'}>Sprzęt wielozadaniowy</NavLink></li>
+                <li><NavLink smaller to={'/wood'}>Drewno kominkowe</NavLink></li>
             </SecondaryList>
           </PrimaryListItemHover>
-          <li>Realizacje</li>
-          <li>Aktualności</li>
-          <li>Kontakt</li>
+          <li><NavLink to={'/realizations'}>Realizacje</NavLink></li>
+          <li><NavLink to={'/news'}>Aktualności</NavLink></li>
+          <li><NavLink to={'/contact'}>Contact</NavLink></li>
       </PrimaryList>
     </DesktopNavStyled>
   )
