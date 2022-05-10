@@ -8,10 +8,12 @@ import RealizationsPreview from './RealizationsPreview'
 import OurClients from './OurClients'
 import ServicesPreview from './ServicesPreview'
 import Ad from './Ad'
+import Menu from './Menu'
 const Home = () => {
   return (
     <>
       <Header/>
+      <Menu/>
       <Ad/>
       <Stripe bgColor={'#184e77'} justify={'space-between'}>
         <p>Szukasz inspiracji? Chcesz dowiedzieć sie więcej? Napisz lub zadzwoń</p>
