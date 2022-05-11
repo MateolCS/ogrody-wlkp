@@ -13,6 +13,7 @@ export const Container = styled.div`
     display: flex;
     gap: ${({gap}) => gap ? gap : '1rem'};
     padding: 2rem 0;
+    flex-direction: ${({direction}) => direction ? direction : 'row'};
 
     img{
         max-width: 40rem;
@@ -75,4 +76,28 @@ export const ButtonLink = styled(Link)`
     color: ${({txtColor}) => txtColor};
     background-color: ${({bgColor}) => bgColor};
     padding: 1rem;
+`
+
+export const Title = styled.h2`
+    font-size: 2rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-bottom: .7rem;
+
+    ::before {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        width: 30px;
+        border-bottom: 4px solid #6a994e;
+    }
+`
+
+export const Frame = styled.iframe`
+    width: 100%;
+    border: 2px solid #ccc;
+`
+
+export const TextList = styled.ul`
+    margin-left: 2rem;
 `
