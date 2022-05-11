@@ -11,7 +11,7 @@ export const StyledStripe = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         flex-direction: column;
-        gap: .7rem;
+        gap: 2rem;
         text-align: center;
         line-height: 1.5;
 

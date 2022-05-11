@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Header/>
-      <Menu/>
+      <Menu pageTitle="Home"/>
       <Ad/>
       <Stripe bgColor={'#184e77'} justify={'space-between'}>
         <p>Szukasz inspiracji? Chcesz dowiedzieć sie więcej? Napisz lub zadzwoń</p>

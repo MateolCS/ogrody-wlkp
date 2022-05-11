@@ -1,16 +1,20 @@
-import { StyledMenu, StyledMenuTop, StyledMenuBottom, StyledMenuBottomTitle, StyledMenuBottomLink, ButtonContainer, LeftArrow, RightArrow, MenuContainer, HamburgerIcon } from "./styles/Menu.styled"
+import { StyledMenu, StyledMenuTop, StyledMenuBottom, StyledMenuBottomTitle, StyledMenuBottomLink, ButtonContainer, LeftArrow, RightArrow, MenuContainer, HamburgerIcon, StyledMenuSubtitle } from "./styles/Menu.styled"
 import logo from "././../assets/logo.png"
 import DesktopNav from "./DesktopNav"
 import React, { useState} from "react"
 import bg1 from "././../assets/bg1.jpg"
 import bg2 from "././../assets/bg2.jpg"
 import bg3 from "././../assets/bg3.jpg"
+import standardBg from "././../assets/standardbg.jpg"
+import { useLocation } from "react-router-dom"
 
 
 export const MenuContext = React.createContext()
 
 
-const Menu = () => {
+const Menu = ({pageTitle}) => {
+
+    const location = useLocation()
 
     const [displayMenu, setDisplayMenu] = useState(false)
     const [background, setBackground] = useState(0)
@@ -55,7 +59,7 @@ const Menu = () => {
 
 
   return (
-    <StyledMenu background={backgroundVariants[background].background}>
+    <StyledMenu background={location.pathname === '/' ? backgroundVariants[background].background : standardBg}>
       <StyledMenuTop>
         <MenuContext.Provider value={displayMenu}>
             <MenuContainer>
@@ -66,13 +70,19 @@ const Menu = () => {
         </MenuContext.Provider>
       </StyledMenuTop>
       <StyledMenuBottom>
-            <StyledMenuBottomTitle>{backgroundVariants[background].title}</StyledMenuBottomTitle>
-            <ButtonContainer>
-                <StyledMenuBottomLink txtColor='green' bgColor='#fff' to={`${backgroundVariants[background].path}`} >Zobacz więcej</StyledMenuBottomLink>
-                <StyledMenuBottomLink txtColor='#fff' bgColor='green' to={'/contact'} >Kontakt</StyledMenuBottomLink>
-            </ButtonContainer>
-            <LeftArrow onClick={changeBackgroundBackward}/>
-            <RightArrow onClick={changeBackgroundForward}/>
+            <StyledMenuBottomTitle>{location.pathname === '/' ? backgroundVariants[background].title : pageTitle}</StyledMenuBottomTitle>
+            {location.pathname === '/' ?
+                <>
+                <ButtonContainer>
+                    <StyledMenuBottomLink txtColor='green' bgColor='#fff' to={`${backgroundVariants[background].path}`} >Zobacz więcej</StyledMenuBottomLink>
+                    <StyledMenuBottomLink txtColor='#fff' bgColor='green' to={'/contact'} >Kontakt</StyledMenuBottomLink>
+                </ButtonContainer>
+                <LeftArrow onClick={changeBackgroundBackward}/>
+                <RightArrow onClick={changeBackgroundForward}/>
+                </>
+                :
+                <StyledMenuSubtitle>Firma Ogrodnicza B&K Ogrody i Systemy Nawadaniania</StyledMenuSubtitle>
+            }
         </StyledMenuBottom>
     </StyledMenu>
   )

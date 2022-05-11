@@ -30,7 +30,7 @@ export const StripeContainerTitle = styled.p`
 
 
 export const StripeContainerDesc = styled.p`
-    font-size: .7rem;
+    font-size: .8rem;
     line-height: 1.5;
     color: #000;
 `

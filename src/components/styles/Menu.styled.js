@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill } from "react-icons/bs"
 import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
+
 export const StyledMenu = styled.nav`
     background: url(${({ background }) => background}) no-repeat;
     background-size: cover;
@@ -126,4 +127,7 @@ export const MenuContainer = styled.div`
             padding-left: 1rem;
         }
     }
+`
+export const StyledMenuSubtitle = styled.h3`
+    color: #fff;
 `
