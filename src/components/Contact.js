@@ -3,7 +3,8 @@ import Footer from "./Footer"
 import InfoNav from "./InfoNav"
 import Menu from "./Menu"
 import Location from "./Location"
-import { StyledSection, SectionTitle, TextContent, Container, Text, ParagraphTitle, Leaf, GreenRectangle, RectangleCheckP, RectangleCheck, ButtonLink, Title, Frame, TextList} from "./styles/Utils.styled"
+import { StyledSection, TextContent, Container, Text, ParagraphTitle, Title, Frame, TextList} from "./styles/Utils.styled"
+import ContactForm from "./ContactForm"
 
 const Contact = () => {
   return (
@@ -12,9 +13,10 @@ const Contact = () => {
       <Menu pageTitle="Kontakt"/>
       <Location></Location>
       <StyledSection>
-        <Container direction={'column'}>
+        <Container direction={'column'} gap={'2rem'}>
             <Title>Kontakt</Title>
             <Frame src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19257.465493056716!2d16.965100381765772!3d52.89112470503965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47038ac4edfca4d1%3A0x9a3a64a9adfdd5bb!2s64-840%20Budzy%C5%84!5e0!3m2!1spl!2spl!4v1652275562178!5m2!1spl!2spl" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></Frame>
+            <ContactForm/>
             <Text>
                 <ParagraphTitle>Kompleksowe rozwiązania z zakresu zagospodarowania terenów zieleni</ParagraphTitle>
                 <TextList>

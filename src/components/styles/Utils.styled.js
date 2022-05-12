@@ -95,6 +95,7 @@ export const Title = styled.h2`
 
 export const Frame = styled.iframe`
     width: 100%;
+    height: 30rem;
     border: 2px solid #ccc;
 `
 
