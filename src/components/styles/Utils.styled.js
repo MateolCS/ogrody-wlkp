@@ -102,3 +102,35 @@ export const Frame = styled.iframe`
 export const TextList = styled.ul`
     margin-left: 2rem;
 `
+
+export const Grid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(${({columns}) => columns}, 1fr);
+    gap: 1rem;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        grid-template-columns: 1fr;
+    }
+`
+
+export const GridItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+`
+
+export const ReadMore = styled(Link)`
+    color: #6a994e;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+`
+
+export const TitleLink = styled(Link)`
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+`

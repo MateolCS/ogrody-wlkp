@@ -3,6 +3,7 @@ import Footer from "./Footer"
 import InfoNav from "./InfoNav"
 import Menu from "./Menu"
 import Location from "./Location"
+import { LocationLink, GreaterThan, LocationP } from "./styles/Location.styled"
 import { StyledSection, TextContent, Container, Text, ParagraphTitle, Title, Frame, TextList} from "./styles/Utils.styled"
 import ContactForm from "./ContactForm"
 
@@ -11,7 +12,10 @@ const Contact = () => {
     <>
       <Header/>
       <Menu pageTitle="Kontakt"/>
-      <Location></Location>
+      <Location>
+        <LocationLink to={'/'}>Strona główna <GreaterThan/></LocationLink>
+        <LocationP>Kontakt</LocationP>
+      </Location>
       <StyledSection>
         <Container direction={'column'} gap={'2rem'}>
             <Title>Kontakt</Title>
