@@ -3,6 +3,7 @@ import Home from './components/Home';
 import AbouUs from './components/AbouUs';
 import Contact from './components/Contact';
 import GardeningServices from './components/GardeningServices';
+import Hydration from './components/Hydration';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/aboutus' element={<AbouUs/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/gardening-services' element={<GardeningServices/>}/>
+          <Route path='/hydration' element={<Hydration/>}/>
         </Routes>
       </Router>
     </>

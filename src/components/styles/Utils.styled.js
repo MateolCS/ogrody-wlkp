@@ -20,7 +20,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
-        flex-direction: column;
+        flex-direction: ${({mobileDirection}) => mobileDirection ? mobileDirection : 'column'};
     }
 
 `
@@ -133,4 +133,71 @@ export const TitleLink = styled(Link)`
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.2rem;
+`
+
+export const SideNav = styled.nav`
+    width: 100%;
+`
+
+export const SideNavList = styled.ul`
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+`
+
+export const SideNavListItem = styled.li`
+    background-color: #ccc;
+    color: #595959;
+    padding: .5rem 1rem;
+
+    a{
+        color: #595959;
+    }
+
+    &:hover {
+        background-color: #6a994e;
+        
+        a{
+            color: #fff;
+        }
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        padding: 1rem 2rem;
+    }
+`
+
+export const CurrenSideNavListItem = styled.li`
+    background-color: #6a994e;
+    color: #fff;
+    padding: .5rem 1rem;
+
+    a{
+        color: #fff;
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        padding: 1rem 2rem;
+    }
+`
+
+export const SideLink = styled(Link)`
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+
+`
+
+export const PageContent = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+`
+
+export const MainImg = styled.img`
+    width: 100%;
+    margin-bottom: 1rem;
+    align-self: center;
 `
