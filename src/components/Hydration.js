@@ -8,9 +8,19 @@ import { StyledSection, TextContent, Container, ParagraphTitle, Title, Grid, Pag
 import {HydrationData} from './HydrationData'
 import {Services} from './ServicesPreviewData'
 import hydrationmainpicture from '././../assets/hydration/hydrationmainpicture.jpg'
-
+import ModalImg from "./ModalImg"
+import { useState } from "react"
 
 const Hydration = () => {
+
+    const [modalImg, setModalImg] = useState(null)
+    const [modalImgIndex, setModalImgIndex] = useState(null)
+
+    const getModalData = (e) =>{
+        setModalImg(e.target.src)
+        setModalImgIndex(e.key)
+    }
+
   return (
     <>
         <Header/>
@@ -38,7 +48,7 @@ const Hydration = () => {
                     <ParagraphTitle>Nawadnianie ogrodów przykładowe realizacje</ParagraphTitle>
                     <Grid columns={'3'}>
                         {HydrationData.map((item, index) => (
-                            <img key={index} src={item} alt={item}/>
+                            <img key={index} src={item} alt={item} onClick={getModalData}/>
                         ))}
                     </Grid>
 
@@ -60,6 +70,7 @@ const Hydration = () => {
                 </SideNav>
             </Container>
         </StyledSection>
+        <ModalImg imgUrl={hydrationmainpicture}/>
         <InfoNav/>
         <Footer/>
     </>
