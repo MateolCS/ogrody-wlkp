@@ -1,0 +1,26 @@
+import hydration1 from '././../assets/hydration/hydration1.jpg';
+import hydration2 from '././../assets/hydration/hydration2.jpg';
+import hydration3 from '././../assets/hydration/hydration3.jpg';
+import hydration4 from '././../assets/hydration/hydration4.jpg';
+import hydration5 from '././../assets/hydration/hydration5.jpg';
+import hydration6 from '././../assets/hydration/hydration6.jpg';
+import hydration7 from '././../assets/hydration/hydration7.jpg';
+import hydration8 from '././../assets/hydration/hydration8.jpg';
+import hydration9 from '././../assets/hydration/hydration9.jpg';
+import hydration10 from '././../assets/hydration/hydration10.jpg';
+import hydration11 from '././../assets/hydration/hydration11.jpg';
+import hydration12 from '././../assets/hydration/hydration12.jpg';
+import hydration13 from '././../assets/hydration/hydration13.jpg';
+import hydration14 from '././../assets/hydration/hydration14.jpg';
+import hydration15 from '././../assets/hydration/hydration15.jpg';
+import hydration16 from '././../assets/hydration/hydration16.jpg';
+import hydration17 from '././../assets/hydration/hydration17.jpg';
+import hydration18 from '././../assets/hydration/hydration18.jpg';
+import hydration19 from '././../assets/hydration/hydration19.jpg';
+import hydration20 from '././../assets/hydration/hydration20.jpg';
+import hydration21 from '././../assets/hydration/hydration21.jpg';
+import hydration22 from '././../assets/hydration/hydration22.jpg';
+import hydration23 from '././../assets/hydration/hydration23.jpg';
+import hydration24 from '././../assets/hydration/hydration24.jpg';
+
+export const HydrationData = [hydration1, hydration2, hydration3, hydration4, hydration5, hydration6, hydration7, hydration8, hydration9, hydration10, hydration11, hydration12, hydration13, hydration14, hydration15, hydration16, hydration17, hydration18, hydration19, hydration20, hydration21, hydration22, hydration23, hydration24];
