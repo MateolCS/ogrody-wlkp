@@ -135,7 +135,7 @@ export const TitleLink = styled(Link)`
     font-size: 1.2rem;
 `
 
-export const SideNav = styled.nav`
+export const SideNavStyled = styled.nav`
     width: 40%;
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {

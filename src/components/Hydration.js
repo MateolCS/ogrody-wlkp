@@ -4,12 +4,12 @@ import Menu from "./Menu"
 import Location from "./Location"
 import InfoNav from "./InfoNav"
 import { LocationLink, LocationP, GreaterThan } from "./styles/Location.styled"
-import { StyledSection, TextContent, Container, ParagraphTitle, Title, Grid, PageContent, SideNav, SideNavList, SideNavListItem, SideLink, CurrenSideNavListItem, MainImg} from "./styles/Utils.styled"
+import { StyledSection, TextContent, Container, ParagraphTitle, Title, Grid, PageContent, MainImg} from "./styles/Utils.styled"
 import {HydrationData} from './HydrationData'
-import {Services} from './ServicesPreviewData'
 import hydrationmainpicture from '././../assets/hydration/hydrationmainpicture.jpg'
 import ModalImg from "./ModalImg"
 import { useState } from "react"
+import SideNav from "./SideNav"
 
 const Hydration = () => {
 
@@ -55,23 +55,8 @@ const Hydration = () => {
                             <img id={item.id} key={item.id} src={item.url} alt={item.url} onClick={showModal}/>
                         ))}
                     </Grid>
-
                 </PageContent>
-                <SideNav>
-                    <SideNavList>
-                        {Services.map((service) => (
-                            service.title === 'Nawadnianie ogrodu' ? (
-                                <CurrenSideNavListItem key={service.id}>
-                                    <SideLink to={service.path}>{service.title}</SideLink>
-                                </CurrenSideNavListItem>
-                            ) : (
-                                <SideNavListItem key={service.id}>
-                                    <SideLink to={service.path}>{service.title}</SideLink>
-                                </SideNavListItem>
-                            )
-                        ))}
-                    </SideNavList>
-                </SideNav>
+                <SideNav currentItem={'Nawadnianie ogrodu'}/>
             </Container>
         </StyledSection>
         <ModalImg pictures={HydrationData} imgUrl={modalImg} setModalImg={setModalImg} displayModal={displayModal} setDisplayModal={setDisplayModal}/>
