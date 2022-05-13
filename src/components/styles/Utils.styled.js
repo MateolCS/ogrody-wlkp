@@ -111,6 +111,10 @@ export const Grid = styled.div`
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;
     }
+
+    img{
+        cursor: pointer;
+    }
 `
 
 export const GridItem = styled.div`
@@ -204,4 +208,8 @@ export const MainImg = styled.img`
     width: 100%;
     margin-bottom: 1rem;
     align-self: center;
+`
+
+export const TextListOrd = styled.ol`
+    margin-left: 2rem;
 `

@@ -14,7 +14,6 @@ const ModalImg = ({imgUrl, setDisplayModal, displayModal, setModalImg, pictures}
       setModalImg(0)
     }
     else{
-      console.log('next', imgUrl)
       setModalImg(imgUrl+1)
     }
   }
