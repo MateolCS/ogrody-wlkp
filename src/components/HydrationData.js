@@ -23,4 +23,101 @@ import hydration22 from '././../assets/hydration/hydration22.jpg';
 import hydration23 from '././../assets/hydration/hydration23.jpg';
 import hydration24 from '././../assets/hydration/hydration24.jpg';
 
-export const HydrationData = [hydration1, hydration2, hydration3, hydration4, hydration5, hydration6, hydration7, hydration8, hydration9, hydration10, hydration11, hydration12, hydration13, hydration14, hydration15, hydration16, hydration17, hydration18, hydration19, hydration20, hydration21, hydration22, hydration23, hydration24];
+export const HydrationData = [
+    {
+        id: 0,
+        url: hydration1,
+    },
+    {
+        id: 1,
+        url: hydration2,
+    },
+    {
+        id: 2,
+        url: hydration3,
+    },
+    {
+        id: 3,
+        url: hydration4,
+    },
+    {
+        id: 4,
+        url: hydration5,
+    },
+    {
+        id: 5,
+        url: hydration6,
+    },
+    {
+        id: 6,
+        url: hydration7,
+    },
+    {
+        id: 7,
+        url: hydration8,
+    },
+    {
+        id: 8,
+        url: hydration9,
+    },
+    {
+        id: 9,
+        url: hydration10,
+    },
+    {
+        id: 10,
+        url: hydration11,
+    },
+    {
+        id: 11,
+        url: hydration12,
+    },
+    {
+        id: 12,
+        url: hydration13,
+    },
+    {
+        id: 13,
+        url: hydration14,
+    },
+    {
+        id: 14,
+        url: hydration15,
+    },
+    {
+        id: 15,
+        url: hydration16,
+    },
+    {
+        id: 16,
+        url: hydration17,
+    },
+    {
+        id: 17,
+        url: hydration18,
+    },
+    {
+        id: 18,
+        url: hydration19,
+    },
+    {
+        id: 19,
+        url: hydration20,
+    },
+    {
+        id: 20,
+        url: hydration21,
+    },
+    {
+        id: 21,
+        url: hydration22,
+    },
+    {
+        id: 22,
+        url: hydration23,
+    },
+    {
+        id: 23,
+        url: hydration24,
+    }
+];

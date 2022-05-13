@@ -14,12 +14,16 @@ import { useState } from "react"
 const Hydration = () => {
 
     const [modalImg, setModalImg] = useState(null)
-    const [modalImgIndex, setModalImgIndex] = useState(null)
+    const[displayModal, setDisplayModal] = useState(false)
 
-    const getModalData = (e) =>{
-        setModalImg(e.target.src)
-        setModalImgIndex(e.key)
+    const showModal = (e) =>{
+        setModalImg(Number(e.target.id))
+        setDisplayModal(true)
+
+        console.log(e.target.id)
     }
+
+    
 
   return (
     <>
@@ -47,8 +51,8 @@ const Hydration = () => {
                     </TextContent>
                     <ParagraphTitle>Nawadnianie ogrodów przykładowe realizacje</ParagraphTitle>
                     <Grid columns={'3'}>
-                        {HydrationData.map((item, index) => (
-                            <img key={index} src={item} alt={item} onClick={getModalData}/>
+                        {HydrationData.map((item) => (
+                            <img id={item.id} key={item.id} src={item.url} alt={item.url} onClick={showModal}/>
                         ))}
                     </Grid>
 
@@ -70,7 +74,7 @@ const Hydration = () => {
                 </SideNav>
             </Container>
         </StyledSection>
-        <ModalImg imgUrl={hydrationmainpicture}/>
+        <ModalImg pictures={HydrationData} imgUrl={modalImg} setModalImg={setModalImg} displayModal={displayModal} setDisplayModal={setDisplayModal}/>
         <InfoNav/>
         <Footer/>
     </>
