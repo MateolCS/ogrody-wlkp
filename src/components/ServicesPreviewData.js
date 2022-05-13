@@ -139,7 +139,7 @@ const Services = [
     },
     {
         id: 9,
-        title: 'Drewno kominkowe ',
+        title: 'Drewno kominkowe',
         path: '/gardening-services/wood',
         desc: 'Sprzedaż drewna kominkowego ',
         imgUrl: otherservice6

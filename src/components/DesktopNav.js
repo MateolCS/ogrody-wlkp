@@ -20,15 +20,15 @@ const DesktopNav = () => {
           <li><NavLink to={'/aboutus'}>O Firmie</NavLink></li>
           <PrimaryListItemHover onClick={toggleSecondList}><NavLink to={'/services'}>Oferta</NavLink> <TriangleDown/>
             <SecondaryList hoverSecondList={hoverSecondList} >
-                <li><NavLink smaller to={'/projects'}>Projektowanie ogrodów</NavLink></li>
-                <li><NavLink smaller to={'/get-started'}>Zakladanie ogrodów</NavLink></li>
-                <li><NavLink smaller to={'/gardens'}>Pielęgnacja ogrodów</NavLink></li>
-                <li><NavLink smaller to={'/hydration'}>Nawadnianie ogrodów</NavLink></li>
-                <li><NavLink smaller to={'/lights'}>Oświetlenie ogrodów</NavLink></li>
-                <li><NavLink smaller to={'/dihydration'}>Odwodnienia i drenaze</NavLink></li>
-                <li><NavLink smaller to={'/brick'}>Nawiezchnie utwardzone</NavLink></li>
-                <li><NavLink smaller to={'/multi-tool'}>Sprzęt wielozadaniowy</NavLink></li>
-                <li><NavLink smaller to={'/wood'}>Drewno kominkowe</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/projects'}>Projektowanie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/get-started'}>Zakladanie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/gardens'}>Pielęgnacja ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/hydration'}>Nawadnianie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/lights'}>Oświetlenie ogrodów</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/dihydration'}>Odwodnienia i drenaze</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/brick'}>Nawiezchnie utwardzone</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/multi-tool'}>Sprzęt wielozadaniowy</NavLink></li>
+                <li><NavLink smaller to={'/gardening-services/wood'}>Drewno kominkowe</NavLink></li>
             </SecondaryList>
           </PrimaryListItemHover>
           <li><NavLink to={'/realizations'}>Realizacje</NavLink></li>

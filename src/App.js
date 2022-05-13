@@ -4,6 +4,7 @@ import AbouUs from './components/AbouUs';
 import Contact from './components/Contact';
 import GardeningServices from './components/GardeningServices';
 import Hydration from './components/Hydration';
+import Wood from './components/Wood';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route path='/aboutus' element={<AbouUs/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/gardening-services' element={<GardeningServices/>}/>
-          <Route path='/hydration' element={<Hydration/>}/>
+          <Route path='/gardening-services/hydration' element={<Hydration/>}/>
+          <Route path='/gardening-services/wood' element={<Wood/>}/>
         </Routes>
       </Router>
     </>

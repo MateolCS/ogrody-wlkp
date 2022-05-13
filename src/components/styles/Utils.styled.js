@@ -136,7 +136,11 @@ export const TitleLink = styled(Link)`
 `
 
 export const SideNav = styled.nav`
-    width: 100%;
+    width: 40%;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        width: 100%;
+    }
 `
 
 export const SideNavList = styled.ul`
