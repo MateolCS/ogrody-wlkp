@@ -110,6 +110,7 @@ export const Grid = styled.div`
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 
     img{
@@ -212,4 +213,5 @@ export const MainImg = styled.img`
 
 export const TextListOrd = styled.ol`
     margin-left: 2rem;
+    margin-bottom: ${({mrgBot}) => mrgBot};
 `

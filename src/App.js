@@ -9,6 +9,7 @@ import Multitools from './components/Multitools';
 import Lights from './components/Lights';
 import GetStarted from './components/GetStarted';
 import Projects from './components/Projects';
+import Dihydration from './components/Dihydration';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/gardening-services/lights' element={<Lights/>}/>
           <Route path='/gardening-services/get-started' element={<GetStarted/>}/>
           <Route path='/gardening-services/projects' element={<Projects/>}/>
+          <Route path='/gardening-services/dihydration' element={<Dihydration/>}/>
         </Routes>
       </Router>
     </>

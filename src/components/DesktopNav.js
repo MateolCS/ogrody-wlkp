@@ -18,7 +18,7 @@ const DesktopNav = () => {
       <PrimaryList show={toggleMenu}>
           <li><NavLink to={'/'}>Home</NavLink></li>
           <li><NavLink to={'/aboutus'}>O Firmie</NavLink></li>
-          <PrimaryListItemHover onClick={toggleSecondList}><NavLink to={'/services'}>Oferta</NavLink> <TriangleDown/>
+          <PrimaryListItemHover onClick={toggleSecondList}><NavLink to={'/gardening-services'}>Oferta</NavLink> <TriangleDown/>
             <SecondaryList hoverSecondList={hoverSecondList} >
                 <li><NavLink smaller to={'/gardening-services/projects'}>Projektowanie ogrodów</NavLink></li>
                 <li><NavLink smaller to={'/gardening-services/get-started'}>Zakladanie ogrodów</NavLink></li>
