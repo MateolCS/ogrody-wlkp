@@ -8,6 +8,7 @@ import Wood from './components/Wood';
 import Multitools from './components/Multitools';
 import Lights from './components/Lights';
 import GetStarted from './components/GetStarted';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/gardening-services/multitools' element={<Multitools/>}/>
           <Route path='/gardening-services/lights' element={<Lights/>}/>
           <Route path='/gardening-services/get-started' element={<GetStarted/>}/>
+          <Route path='/gardening-services/projects' element={<Projects/>}/>
         </Routes>
       </Router>
     </>
