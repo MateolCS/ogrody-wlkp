@@ -7,6 +7,7 @@ import Hydration from './components/Hydration';
 import Wood from './components/Wood';
 import Multitools from './components/Multitools';
 import Lights from './components/Lights';
+import GetStarted from './components/GetStarted';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/gardening-services/wood' element={<Wood/>}/>
           <Route path='/gardening-services/multitools' element={<Multitools/>}/>
           <Route path='/gardening-services/lights' element={<Lights/>}/>
+          <Route path='/gardening-services/get-started' element={<GetStarted/>}/>
         </Routes>
       </Router>
     </>
