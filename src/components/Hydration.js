@@ -23,8 +23,6 @@ const Hydration = () => {
         console.log(e.target.id)
     }
 
-    
-
   return (
     <>
         <Header/>
