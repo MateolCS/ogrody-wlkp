@@ -212,6 +212,19 @@ export const MainImg = styled.img`
 `
 
 export const TextListOrd = styled.ol`
-    margin-left: 2rem;
+    margin-left: ${({mLeft}) => mLeft ? mLeft : '2rem'};
     margin-bottom: ${({mrgBot}) => mrgBot};
+
+    >li{
+        padding-bottom: ${({paddingBot}) => paddingBot ? paddingBot : ''};
+    }
+`
+
+export const TextListAlf = styled.ul`
+    list-style: lower-latin;
+`
+
+export const PrivacyLink = styled.a`
+    text-decoration: none;
+    color: #6a994e;
 `

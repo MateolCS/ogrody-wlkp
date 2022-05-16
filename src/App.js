@@ -11,6 +11,7 @@ import GetStarted from './components/GetStarted';
 import Projects from './components/Projects';
 import Dihydration from './components/Dihydration';
 import GroundCover from './components/GroundCover';
+import Privacy from './components/Privacy';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/gardening-services/projects' element={<Projects/>}/>
           <Route path='/gardening-services/dihydration' element={<Dihydration/>}/>
           <Route path='/gardening-services/ground-cover' element={<GroundCover/>}/>
+          <Route path='/privacy-politics' element={<Privacy/>}/>
         </Routes>
       </Router>
     </>

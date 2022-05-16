@@ -42,7 +42,7 @@ const InfoNav = () => {
             <ul>
               <li><FaPhone/>Tomasz Kujawa: <ContactLink href='tel:604-342-038'>604-342-038</ContactLink></li>
               <li><FaPhone/>Michal Borowicz: <ContactLink href='tel:660-709-582'>660-709-582</ContactLink></li>
-              <li><FaEnvelope/> <ContactLink href='mailto:biuro@ogrody-wlkp.pl'>660-709-582</ContactLink></li>
+              <li><FaEnvelope/> <ContactLink href='mailto:biuro@ogrody-wlkp.pl'>biuro@ogrody-wlkp.pl</ContactLink></li>
               <li><FaHome/> Budzyń woj. wielkopolskie</li>
               <GreenLi><FaFacebook/> <FaYoutube/></GreenLi>
             </ul>

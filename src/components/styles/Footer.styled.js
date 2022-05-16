@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 export const StyledFooter = styled.footer`
     background-color: #184e77;
@@ -20,5 +21,10 @@ export const FooterContainer = styled.div`
         gap: .7rem;
         margin-bottom: 10.4rem;
     }
+`
+
+export const FooterLink = styled(Link)`
+    text-decoration: none;
+    color: #fff;
 `
 
