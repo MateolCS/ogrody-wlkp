@@ -9,7 +9,7 @@ export const RealizationsData = [
     {
         id: 1,
         imgUrl: realization1,
-        path: '/realizations/realizatio1',
+        path: '/realizations/realization1',
         title: 'Realizacja 1',
 
     },
