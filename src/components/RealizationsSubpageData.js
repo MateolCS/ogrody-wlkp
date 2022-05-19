@@ -84,7 +84,7 @@ export const RealizationsSubpageData = [
     },
     {
         id: 1,
-        imgUrl: '',
+        imgUrl: wagrowiec1,
         title: 'Gmina Wągrowiec',
         description: {},
         investor: 'Gmina Wągrowiec',
