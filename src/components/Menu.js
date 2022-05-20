@@ -81,7 +81,7 @@ const Menu = ({pageTitle}) => {
                 <RightArrow onClick={changeBackgroundForward}/>
                 </>
                 :
-                <StyledMenuSubtitle>Firma Ogrodnicza B&K Ogrody i Systemy Nawadaniania</StyledMenuSubtitle>
+                <StyledMenuSubtitle>{location.pathname === '/news' ? 'Wydarzenia,Nowości,Aktualności' : 'Firma Ogrodnicza B&K Ogrody i Systemy Nawadaniania'}</StyledMenuSubtitle>
             }
         </StyledMenuBottom>
     </StyledMenu>

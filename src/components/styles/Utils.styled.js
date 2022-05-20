@@ -80,7 +80,7 @@ export const ButtonLink = styled(Link)`
 `
 
 export const Title = styled.h2`
-    font-size: 2rem;
+    font-size: ${({fSize}) => fSize ? fSize : '2rem'};
     border-bottom: 1px solid #ccc;
     position: relative;
     padding-bottom: .7rem;
@@ -287,3 +287,59 @@ export const ButtonArea = styled.div`
     justify-content: space-around;
 `
 
+export const SearchNav = styled.nav`
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+`
+
+export const SearchNavInputBox = styled.div`
+    display: flex;
+    width: 100%;
+
+`
+
+export const SearchButton = styled.button`
+    background-color: #6a994e;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+`
+
+export const PostInfo = styled.ul`
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding-bottom: .3rem;
+
+    >li{
+        border-right: 1px solid #000;
+        padding-right: 1rem;
+    }
+
+    >li:last-child{
+        border-right: none;
+    }
+`
+
+export const PostLink = styled(Link)`
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+`
+
+export const Comments = styled.div`
+    width: 100%;
+    border-top: 2px solid #adb5bd;
+    padding-top: 1rem;
+`
+
+export const CommentsInfo = styled.p`
+    color: #495057;
+    font-size: 1rem;
+`
