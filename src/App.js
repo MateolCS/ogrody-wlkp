@@ -15,6 +15,7 @@ import Privacy from './components/Privacy';
 import Realizations from './components/Realizations';
 import Realization from './components/Realization';
 import News from './components/News';
+import Search from './components/Search';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='/realizations' element={<Realizations/>}/>
           <Route path='/realizations/:id' element={<Realization/>}/>
           <Route path='/news' element={<News/>}/>
+          <Route path='/search/:searchResult' element={<Search/>}/>
         </Routes>
       </Router>
     </>

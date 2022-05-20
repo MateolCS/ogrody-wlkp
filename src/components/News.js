@@ -4,21 +4,13 @@ import Location from './Location'
 import InfoNav from './InfoNav'
 import Footer from './Footer'
 import news1 from '././../assets/news/news1.jpg'
+import SearchNav from './SearchNav'
 
 import { LocationLink, LocationP, GreaterThan } from './styles/Location.styled'
-import {Container, MainImg, PageContent, StyledSection, Title, SearchNav, SearchNavInputBox, SearchButton, TextList, PrivacyLink, PostInfo, PostLink, TextContent, Grid, Comments, CommentsInfo} from './styles/Utils.styled'
-import { useState } from 'react'
+import {Container, MainImg, PageContent, StyledSection, Title, PostInfo, PostLink, TextContent, Grid, Comments, CommentsInfo} from './styles/Utils.styled'
 import { GrassData } from './GrassData'
 
 const News = () => {
-
-    const [search, setSearch] = useState('')
-
-    const GetSearchValue = (e) => {
-        e.preventDefault()
-        console.log(search)
-        setSearch('')
-    }
 
   return (
     <>
@@ -51,20 +43,7 @@ const News = () => {
                         <CommentsInfo>Comments for this post are closed</CommentsInfo>
                     </Comments>
                 </PageContent>
-                <SearchNav>
-                    <SearchNavInputBox>
-                    <input type="text" placeholder="Szukaj..." value={search} onChange={(e) => setSearch(e.target.value)}/>
-                    <SearchButton onClick={GetSearchValue}>Szukaj</SearchButton>
-                    </SearchNavInputBox>
-                    <Title fSize={'1.5rem'}>Ostatnie wpisy</Title>
-                    <TextList>
-                        <li><PrivacyLink to={'/news'}>Trawnik w jeden dzień</PrivacyLink></li>
-                    </TextList>
-                    <Title fSize={'1.5rem'}>Kategorie</Title>
-                    <TextList>
-                        <li><PrivacyLink to={'/news'}>News</PrivacyLink></li>
-                    </TextList>
-                </SearchNav>
+                <SearchNav/>
             </Container>
         </StyledSection>
         <InfoNav/>

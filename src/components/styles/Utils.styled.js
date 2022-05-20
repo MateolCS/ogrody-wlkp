@@ -203,7 +203,7 @@ export const PageContent = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: ${({gap}) => gap ? gap : '1rem'};
 `
 
 export const PageContentContainer = styled.div`
@@ -287,7 +287,7 @@ export const ButtonArea = styled.div`
     justify-content: space-around;
 `
 
-export const SearchNav = styled.nav`
+export const SearchNavStyled = styled.nav`
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -342,4 +342,11 @@ export const Comments = styled.div`
 export const CommentsInfo = styled.p`
     color: #495057;
     font-size: 1rem;
+`
+
+export const SearchResult = styled.div`
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 `
