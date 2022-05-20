@@ -151,15 +151,6 @@ export const RealizationsSubpageData = [
         title: 'Margonin',
         description: {
             text: 'Lorem ipsum dolor sit amet, mea cu omnium urbanitas, labitur volumus id eum. Ius ignota offendit similique et, sea dolorum vituperata ullamcorper et, justo insolens omittantur sit ne. Aliquip pertinax vix ad, ea eos euismod officiis. Utamur minimum repudiare qui ex. Rationibus theophrastus his ut, eum iudico pericula no. Mei id fugit dolor. Has ne legere tibique. At eam decore probatus. Delenit interesset an mei, ut eos tota vivendo deseruisse. Est at facete delenit democritum. Te nihil aliquip ornatus cum.',
-            subtitles: [
-                'TheKitchen',
-                'The Living Room'
-            ],
-            parContent: [
-                'Nec esse lorem te, qui ea nullam sanctus conceptam. Has ne legere tibique. At eam decore probatus. Delenit interesset an mei, ut eos tota vivendo deseruisse. Est at facete delenit democritum. Te nihil aliquip ornatus cum. Te dictas postulant torquatos qui, ei inani vidisse euismod nam. Ad brute saperet mea, eu vel dico sint tibique. Aperiri admodum voluptaria ut pri, adhuc velit augue in per. Qui te vero tritani, at nibh epicuri voluptaria quo.',
-
-                'Ne sea agam quas, appetere constituto percipitur qui ex. Has ne legere tibique. At eam decore probatus. Delenit interesset an mei, ut eos tota vivendo deseruisse. Est at facete delenit democritum. Te nihil aliquip ornatus cum. Aliquip aliquam ius ad, ne sed lucilius patrioque concludaturque. Has ne legere tibique. At eam decore probatus. Delenit interesset an mei, ut eos tota vivendo deseruisse. Est at facete delenit democritum. Te nihil aliquip ornatus cum. Ne pro quaeque labores liberavisse, sumo hendrerit in nam. No duo dico atomorum, nam dicit consetetur in.'
-            ]
         },
         investor: '',
         category: 'Ogrody',

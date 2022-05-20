@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { FaLeaf, FaCheck } from "react-icons/fa"
+import { FaLeaf, FaCheck, FaUser, FaCaretLeft, FaCaretRight } from "react-icons/fa"
 import { Link } from "react-router-dom"
+import {AiOutlineBars} from "react-icons/ai"
 
 export const StyledSection = styled.section`
     width: 100%;
@@ -205,6 +206,19 @@ export const PageContent = styled.div`
     gap: 1rem;
 `
 
+export const PageContentContainer = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 4rem
+`
+
+export const Content = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+`
+
 export const MainImg = styled.img`
     width: 100%;
     margin-bottom: 1rem;
@@ -228,3 +242,48 @@ export const PrivacyLink = styled.a`
     text-decoration: none;
     color: #6a994e;
 `
+
+export const UserIcon = styled(FaUser)`
+    color: #000;
+    margin-right: .5rem;
+    color: #495057;
+`
+
+export const CategoryIcon = styled(AiOutlineBars)`
+    color: #000;
+    margin-right: .5rem;
+    color: #495057;
+    font-weight: bold;
+`
+
+export const PageSwap = styled(Link)`
+    text-decoration: none;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: .5rem 1rem;
+`
+
+export const TriangleRight = styled(FaCaretRight)`
+    color: #495057;
+    margin-left: .2rem;
+`
+
+export const TriangleLeft = styled(FaCaretLeft)`
+    color: #495057;
+    margin-right: .2rem;
+`
+
+export const RealizationInfo = styled.div`
+    background-color: #e9ecef;
+    color: #495057;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+`
+export const ButtonArea = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+`
+
