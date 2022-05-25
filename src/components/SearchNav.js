@@ -1,4 +1,4 @@
-import {Title, SearchNavStyled, SearchNavInputBox, SearchButton, TextList, PrivacyLink} from './styles/Utils.styled'
+import {Title, SearchNavStyled, SearchNavInputBox, TextList, PrivacyLink, SearchLink} from './styles/Utils.styled'
 
 import { useState } from 'react'
 
@@ -6,17 +6,11 @@ const SearchNav = () => {
 
     const [search, setSearch] = useState('')
 
-    const GetSearchValue = (e) => {
-        e.preventDefault()
-        console.log(search)
-        setSearch('')
-    }
-
   return (
     <SearchNavStyled>
       <SearchNavInputBox>
         <input type="text" placeholder="Szukaj..." value={search} onChange={(e) => setSearch(e.target.value)}/>
-        <SearchButton onClick={GetSearchValue}>Szukaj</SearchButton>
+        <SearchLink to={search ? `/search/${search.split(' ').join('').toLowerCase()}` : '/search/'}>Szukaj</SearchLink>
         </SearchNavInputBox>
         <Title fSize={'1.5rem'}>Ostatnie wpisy</Title>
         <TextList>

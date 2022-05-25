@@ -1,13 +1,3 @@
-import firmahl1 from '././../assets/firmaHL/firmahl1.jpg';
-import firmahl2 from '././../assets/firmaHL/firmahl2.jpg';
-import firmahl3 from '././../assets/firmaHL/firmahl3.jpg';
-import firmahl4 from '././../assets/firmaHL/firmahl4.jpg';
-import firmahl5 from '././../assets/firmaHL/firmahl5.jpg';
-
-
-
-
-
 
 export const NewsData =[
     {
@@ -249,7 +239,7 @@ export const NewsData =[
         
     },
     {
-        id: 32, 
+        id: 33, 
         title: 'O firmie', 
         author: 'juzer', 
         date: '27 października 2014', 

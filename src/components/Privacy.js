@@ -5,7 +5,7 @@ import InfoNav from "./InfoNav"
 import Footer from "./Footer"
 
 import { LocationLink, LocationP, GreaterThan } from "./styles/Location.styled"
-import { Container, StyledSection, ParagraphTitle, TextListOrd, TextListAlf, PrivacyLink, TextList, TextContent, PageContent } from "./styles/Utils.styled"
+import { Container, StyledSection, ParagraphTitle, TextListOrd, TextListAlf, PrivacyLink, TextList, TextContent, } from "./styles/Utils.styled"
 
 const Privacy = () => {
   return (

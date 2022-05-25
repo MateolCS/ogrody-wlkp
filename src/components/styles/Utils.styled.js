@@ -292,6 +292,10 @@ export const SearchNavStyled = styled.nav`
     flex-direction: column;
     gap: 2rem;
     width: 30%;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        width: 100%;
+    }
 `
 
 export const SearchNavInputBox = styled.div`
@@ -325,6 +329,14 @@ export const PostInfo = styled.ul`
     >li:last-child{
         border-right: none;
     }
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        align-items: center;
+
+        >li{
+            font-size: .7rem;
+        }
+    }
 `
 
 export const PostLink = styled(Link)`
@@ -349,4 +361,36 @@ export const SearchResult = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+    }
+`
+
+export const SearchLink = styled(Link)`
+    text-decoration: none;
+    color: #fff;
+    background-color: #6a994e;
+    padding: .5rem 1rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+`
+
+export const SearchNavigateButton = styled.button`
+    background-color: #ccc;
+    color: #495057;
+    padding: 1rem 1.2rem;
+`
+
+export const ButtonContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: none;
 `

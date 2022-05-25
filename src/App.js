@@ -39,6 +39,7 @@ function App() {
           <Route path='/realizations/:id' element={<Realization/>}/>
           <Route path='/news' element={<News/>}/>
           <Route path='/search/:searchResult' element={<Search/>}/>
+          <Route path='/search/' element={<Search/>}/>
         </Routes>
       </Router>
     </>

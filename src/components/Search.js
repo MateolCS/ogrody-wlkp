@@ -7,13 +7,34 @@ import SearchNav from "./SearchNav"
 
 import { useParams } from "react-router-dom"
 import {LocationLink, LocationP, GreaterThan} from "./styles/Location.styled"
-import { Container, PageContent, PostInfo, PostLink, SearchResult, StyledSection, Title, TextContent } from "./styles/Utils.styled"
+import { Container, PageContent, PostInfo, PostLink, SearchResult, StyledSection, Title, TextContent} from "./styles/Utils.styled"
 import {NewsData} from "./NewsData"
+import { useEffect, useState } from "react"
 
 const Search = () => {
 
     let {searchResult} = useParams()
-    console.log(searchResult)
+    const [searchKeyword, setSearchKeyword] = useState(searchResult)
+    const [searchResults, setSearchResults] = useState([])
+
+    
+
+    useEffect(()=>{
+        const getResults = () => {
+            if(searchKeyword === undefined){
+                setSearchResults(NewsData)
+            }
+            else{
+                setSearchResults(NewsData.filter(item => item.title.toLowerCase().includes(searchKeyword)))
+            }
+        }
+        
+        setSearchKeyword(searchResult)
+        getResults()
+    }, [searchResult, searchKeyword])
+
+    console.log(searchResults)
+    
 
   return (
     <>
@@ -27,9 +48,8 @@ const Search = () => {
         <StyledSection>
             <Container>
                 <PageContent gap={'2rem'}>
-                    {NewsData.map((post) => (
-                        post.title.toLowerCase().includes(searchResult.toLowerCase()) && 
-                        <SearchResult key={post.id}>
+                    {searchResults.map((post) => (
+                            <SearchResult key={post.id}>
                             <PostInfo>
                                 <li>{post.date}</li>
                                 <li>{post.author}</li>
