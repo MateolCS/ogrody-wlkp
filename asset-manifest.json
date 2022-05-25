@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/ogrody-wlkp/static/js/main.aadc9a61.js",
+    "main.js": "/ogrody-wlkp/static/js/main.1b249436.js",
     "static/media/getstartedmainimg.jpg": "/ogrody-wlkp/static/media/getstartedmainimg.978e75cebfc6ae8e49d1.jpg",
     "static/media/standardbg.jpg": "/ogrody-wlkp/static/media/standardbg.72042e7dd7f09319dc1d.jpg",
     "static/media/lightsmainimg.jpg": "/ogrody-wlkp/static/media/lightsmainimg.3d71bd102c69655f43da.jpg",
@@ -199,9 +199,9 @@
     "static/media/dihydration24.jpg": "/ogrody-wlkp/static/media/dihydration24.0b85c963236899cad02f.jpg",
     "static/media/groundcover13.jpg": "/ogrody-wlkp/static/media/groundcover13.295335911770e628595d.jpg",
     "index.html": "/ogrody-wlkp/index.html",
-    "main.aadc9a61.js.map": "/ogrody-wlkp/static/js/main.aadc9a61.js.map"
+    "main.1b249436.js.map": "/ogrody-wlkp/static/js/main.1b249436.js.map"
   },
   "entrypoints": [
-    "static/js/main.aadc9a61.js"
+    "static/js/main.1b249436.js"
   ]
 }
