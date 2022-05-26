@@ -4,7 +4,7 @@ import Menu from './Menu'
 import Location from './Location'
 import InfoNav from './InfoNav'
 import { LocationLink, GreaterThan, LocationP } from './styles/Location.styled'
-import { StyledSection, TextContent, Container, Text, ParagraphTitle, Title, Grid ,GridItem, ReadMore, TitleLink} from './styles/Utils.styled'
+import { StyledSection, TextContent, Container, Title, Grid ,GridItem, ReadMore, TitleLink} from './styles/Utils.styled'
 import {Services} from './ServicesPreviewData'
 
 const GardeningServices = () => {

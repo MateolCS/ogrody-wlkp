@@ -3,6 +3,7 @@ import Menu from "./Menu"
 import Location from "./Location"
 import InfoNav from "./InfoNav"
 import Footer from "./Footer"
+import React from "react"
 
 import { LocationLink, LocationP, GreaterThan } from "./styles/Location.styled"
 import { Container, StyledSection, ParagraphTitle, TextListOrd, TextListAlf, PrivacyLink, TextList, TextContent, } from "./styles/Utils.styled"
